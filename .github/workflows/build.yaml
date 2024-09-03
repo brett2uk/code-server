@@ -307,7 +307,7 @@ jobs:
             yarn-build-
 
       - name: Download npm package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-package
 
@@ -363,7 +363,7 @@ jobs:
             yarn-build-
 
       - name: Download npm package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-package
 

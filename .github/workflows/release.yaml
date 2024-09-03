@@ -60,7 +60,7 @@ jobs:
         run: npm install -g yarn
 
       - name: Download npm package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-release-package
 
@@ -163,7 +163,7 @@ jobs:
           PACKAGE: ${{ format('g++-{0}', matrix.prefix) }}
 
       - name: Download npm package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-release-package
 
@@ -220,7 +220,7 @@ jobs:
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Download npm package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-release-package
 
@@ -261,7 +261,7 @@ jobs:
     needs: npm-version
     steps:
       - name: Download npm package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-release-package
 
